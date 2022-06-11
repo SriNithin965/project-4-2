@@ -1,1 +1,8 @@
+need to change
+- project statement looks very small in all 3
+- replace arima diagram
+- add uml diagrams in design ppt
+- added all screenshots in implementation ppt
+  see the screenshots and remove unnecessary ones
 
+- make other changes if you feel like it
