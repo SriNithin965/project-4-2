@@ -1,0 +1,46 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>250</x><y>190</y><w>210</w><h>90</h></coordinates><panel_attributes>DATA
+--
++data: dataFrame
+--
++open()
++read()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>920</x><y>190</y><w>210</w><h>90</h></coordinates><panel_attributes>PRE PROCESSING
+--
++img: dataFrame
+--
++resize()
++nparray()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>520</y><w>210</w><h>90</h></coordinates><panel_attributes>EVALUTION
+--
++model: TensorObject
+--
++accuracy()
++evalute()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1070</x><y>350</y><w>210</w><h>90</h></coordinates><panel_attributes>VISUALIZE
+--
++model: TensorObject
++data: dataFrame
+--
++plot()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>550</y><w>210</w><h>80</h></coordinates><panel_attributes>USER
+--
++input: dataFrame
+--
++preprocess()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>350</y><w>210</w><h>160</h></coordinates><panel_attributes>MODEL
+--
++test: float
++train: float
++hidden_layes: int
++dense_layers: int
++model: TensorObject
+--
++test_train_split()
++add_layers()
++compile()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>210</y><w>490</w><h>60</h></coordinates><panel_attributes>lt=-
+m1=0..n    
+Pre Process &gt;
+
+m2=                                                                            0..1
+</panel_attributes><additional_attributes>10;20;470;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1120</x><y>220</y><w>180</w><h>150</h></coordinates><panel_attributes>Visualize
+lt=&lt;.</panel_attributes><additional_attributes>110;130;110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>270</y><w>190</w><h>100</h></coordinates><panel_attributes>model Building
+0..n
+lt=&lt;-</panel_attributes><additional_attributes>10;80;10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>360</y><w>450</w><h>180</h></coordinates><panel_attributes>Validating
+0..n
+lt=&lt;-</panel_attributes><additional_attributes>10;160;10;10;430;10</additional_attributes></element></diagram>
